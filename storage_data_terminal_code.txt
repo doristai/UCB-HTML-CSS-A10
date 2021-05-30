@@ -1,0 +1,40 @@
+# Ensure the environment is activate 
+conda activate work
+
+# activate MongoDB
+mongod
+
+# Open a second terminal browser to check mongo is working 
+mongod
+
+# Create Database - create a new database named 'practicedb' and make it our active database
+use practicedb
+
+
+# Typing "db" into a terminal connected to Mongo will returns the name of the database that is currently working in
+db
+
+# Insert Data 
+db.collectionName.insert({key:value})
+
+'''
+- db : active database, practicedb
+
+- collectionName : name of the new collection we're creating (we'll customize it when we practice)
+
+- .insert({}) : how MongoDB knows we're inserting data into the collection
+
+- key:value : the format into which we're inserting our data; its construction is very similar to a Python dictionary
+'''
+
+# Find the data inserted 
+db.zoo.find() #zoo is the collection in the practice 
+
+# Delete or drop document 
+db.collectionName.remove({})
+
+# To remove a collection all together 
+db.collectionName.drop()
+
+# To remove the teste database 
+bd.dropDatabase()
