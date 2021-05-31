@@ -17,3 +17,6 @@ Build an app to scrape data from websites for this project and creating an HTML 
     - Creating new function in the ```scraping.py``` for updating hemipshere title and image 
 
     - Updating ```index.html``` so website contains all the information collected 
+
+## Results 
+Successfull results should contains image below 
